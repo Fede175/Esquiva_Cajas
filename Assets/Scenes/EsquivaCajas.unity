@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 145129387}
   - component: {fileID: 145129386}
   - component: {fileID: 145129390}
+  - component: {fileID: 145129391}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -216,6 +217,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c0b1716a06560f4f9a6d50b6b4b241a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &145129391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145129385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53a52e952c27b3c4c82ec6970302db0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,7 +312,7 @@ GameObject:
   - component: {fileID: 483476161}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -473,9 +486,10 @@ GameObject:
   - component: {fileID: 1727070600}
   - component: {fileID: 1727070605}
   - component: {fileID: 1727070604}
+  - component: {fileID: 1727070606}
   m_Layer: 0
-  m_Name: Caja Mala
-  m_TagString: Untagged
+  m_Name: Caja
+  m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -563,10 +577,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &1727070605
 MonoBehaviour:
@@ -580,4 +594,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57898f71a8a2a1c4caeeb90788ab5b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocidad: 0.1
+  Velocidad: 4
+--- !u!114 &1727070606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727070599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af1eef9716968074eae1b5d17609d738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cajaMovementScript: {fileID: 0}
