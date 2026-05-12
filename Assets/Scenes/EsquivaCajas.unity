@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a52e952c27b3c4c82ec6970302db0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Puntos: {fileID: 632985128}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,6 +708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextoTiempo: {fileID: 632985126}
+  Pausa: 1
 --- !u!1 &1124091639
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,8 +930,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57898f71a8a2a1c4caeeb90788ab5b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocidad: 4
-  AumentoVelocidad: 0.5
+  Velocidad: 5
+  AumentoVelocidad: 0.25
 --- !u!114 &1727070606
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class PuntosManager : MonoBehaviour
 {
     public TextMeshProUGUI TextoTiempo;
     float Tiempo = 0f;
+    public bool Pausa = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,10 @@ public class PuntosManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Tiempo += Time.deltaTime;
+        if(Pausa == true)
+        {
+         Tiempo += Time.deltaTime;
         TextoTiempo.text = "Tiempo: " + Tiempo.ToString("F2") + "s";
+        }
     }
 }
